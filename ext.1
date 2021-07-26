@@ -1,0 +1,24 @@
+.TH EXT 1 "JULY 2021" ISC "USER MANUALS"
+.SH NAME
+ext \- display file extensions
+.SH SYNOPSIS
+.B ext
+.I ...
+.SH DESCRIPTION
+.PP
+.B ext
+treats each line in its standard input as the name of a file,
+and will display the apparent extension of each.
+.PP
+If connected to a
+.B tty(1),
+each program argument is used instead,
+wherein newlines are ignored.
+.PP
+Each file extension is wrtten to the standard output on its own line.
+Files without extensions will produce empty lines.
+.SH AUTHORS
+Written and maintained by Oka <yo@oka.io>.
+.SH COPYRIGHT
+.BR ext
+is available under the ISC license.

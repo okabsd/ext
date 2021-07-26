@@ -1,0 +1,23 @@
+ext - display file extensions
+
+installation:
+	make
+	make install
+
+usage:
+	ls | ext
+    ext words.txt image.png
+
+documentation:
+	man ext
+
+ext treats each line in its standard input as the name of a file,
+and will display the apparent extension of each.
+
+if connected to a tty, each program argument is used instead,
+wherein newlines are ignored.
+
+each file extension is written to the standard output on its own line.
+files without extensions will produce empty lines.
+
+oka <yo@oka.io>
