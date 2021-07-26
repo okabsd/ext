@@ -6,7 +6,7 @@ installation:
 
 usage:
 	ls | ext
-    ext words.txt image.png
+	ext words.txt image.png
 
 documentation:
 	man ext
